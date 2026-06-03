@@ -39,11 +39,38 @@
         <textarea id="notes"
         placeholder="Write your recon notes here..."></textarea>
 
-        <button type="submit">
+        <button type="button" onclick="saveNote()">
             Save Note
         </button>
 
     </form>
     </section>
+    <section>
+        <h2>Saved Notes</h2>
+        <div id="Saved-Notes">
+
+        </div>
+    </section>
+    <script>
+
+function saveNote(){
+    let title =
+    document.getElementById("title").value;
+    let category =
+    document.getElementById("category").value;
+    let notes =
+    document.getElementById("notes").value;
+    let savedNotes =
+    document.getElementById("Saved-Notes");
+    let noteCard = document.createElement("div");
+
+    noteCard.innerHTML = `
+        <h3>${title}</h3>
+        <p><strong>Category:</strong> ${category}</p>
+        <p>${notes}</p>  <hr>`;
+    savedNotes.appendChild(noteCard);
+}
+
+</script>
 </body>
 </html>
