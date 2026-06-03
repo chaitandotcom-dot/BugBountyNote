@@ -61,3 +61,50 @@ pre{
 
     margin: auto;
 }
+.note-form{
+    width: 60%;
+
+    margin: auto;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+.note-form input,
+.note-form textarea,
+.note-form select{
+
+    padding: 15px;
+
+    border-radius: 8px;
+
+    border: 1px solid gray;
+
+    font-size: 16px;
+}
+.note-form textarea{
+    height: 200px;
+
+    resize: vertical;
+}
+.note-form label{
+    font-weight: bold;
+
+    text-align: left;
+}
+.note-form button{
+
+    width: fit-content;
+
+    margin: auto;
+
+    padding: 12px 25px;
+
+    font-size: 16px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+}
